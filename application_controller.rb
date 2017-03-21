@@ -13,7 +13,7 @@ class ApplicationController < Sinatra::Base
    post'/result' do
     puts params
     @user_name = params[:name]
-  
+    @user_description = get_definition(@user_name)
      erb:result
    end
   
