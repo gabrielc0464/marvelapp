@@ -11,7 +11,9 @@ class ApplicationController < Sinatra::Base
   end
 
    post'/result' do
-    
+    puts params
+    @user_name = params[:name]
+  
      erb:result
    end
   
