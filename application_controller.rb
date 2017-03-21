@@ -15,7 +15,7 @@ class ApplicationController < Sinatra::Base
     @user_name = params[:name]
     
     @user_description = get_definition(@user_name)
-    # @user_pic = get_image 
+     @user_pic = get_image(@user_name) 
      erb:result
    end
   
